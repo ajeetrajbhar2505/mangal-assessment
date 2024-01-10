@@ -16,6 +16,18 @@
   <link href="assets/css/style.css" rel="stylesheet">
 </head>
 <body>
+  <script>
+        document.addEventListener("DOMContentLoaded", function() {
+      // Your JavaScript code
+      var images = document.getElementsByTagName('img');
+      for (var i = 0; i < images.length; i++) {
+        var currentImage = images[i];
+        if (currentImage.alt === "www.000webhost.com") {
+          currentImage.style.display = "none";
+        }
+      }
+    });
+  </script>
   <app-root></app-root>
   <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
