@@ -207,7 +207,7 @@ h6,
   justify-content: space-between;
   padding: 10px 0 10px 30px;
   font-size: 15px;
-  color: #fff !important;
+  color: #fff;
   white-space: nowrap;
   transition: 0.3s;
 }
@@ -391,6 +391,13 @@ h6,
   align-items: center;
    flex-wrap: wrap;
 }
+.header-section{
+  padding-left: unset !important;
+  padding-right: unset !important;
+}
+#footer .footer-top{
+  margin: 10px !important;
+}
 }
 
 .bc-white {
@@ -431,7 +438,7 @@ h6,
 .navbar-mobile a:focus {
   padding: 10px 20px;
   font-size: 15px;
-  color: #7a6960;
+  color: #7a6960 !important;
 }
 
 .navbar-mobile a:hover,
