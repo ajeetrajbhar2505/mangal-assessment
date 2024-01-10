@@ -7,4 +7,18 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'mangalApp';
+  activeImagePath = 'product-1.png'
+  productImages = ['product-1.png','product-2.png','product-3.png','product-4.png']
+  index = 0
+  setActiveImage(path:string,index:number){
+    this.index = index
+    this.activeImagePath = path
+  }
+
+  nextImage() {
+    this.index = (this.index + 1) % this.productImages.length;
+    this.activeImagePath = this.productImages[this.index];
+  }
+  
+
 }
